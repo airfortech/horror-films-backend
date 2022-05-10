@@ -47,6 +47,7 @@ class FilmsController {
         original_title,
         overview,
         vote_average,
+        vote_count,
         popularity,
         release_date,
         tagline,
@@ -69,6 +70,7 @@ class FilmsController {
         overview,
         overview_en,
         vote_average,
+        vote_count,
         popularity,
         release_date,
         tagline,
@@ -91,15 +93,18 @@ class FilmsController {
           .map(({ file_path }) => file_path),
         cast: cast
           .slice(0, numberOfCast)
-          .map(({ name, profile_path, original_name }) => ({
+          .map(({ id, name, profile_path, original_name, character }) => ({
+            id,
             name,
             original_name,
+            character,
             profile_path,
           })),
         directors: crew
           .filter(({ job }) => job === "Director")
           .slice(0, 3)
-          .map(({ name, profile_path, original_name }) => ({
+          .map(({ id, name, profile_path, original_name }) => ({
+            id,
             name,
             original_name,
             profile_path,
@@ -107,7 +112,8 @@ class FilmsController {
         screenplay: crew
           .filter(({ job }) => job === "Screenplay" || job === "Writer")
           .slice(0, 3)
-          .map(({ name, profile_path, original_name }) => ({
+          .map(({ id, name, profile_path, original_name }) => ({
+            id,
             name,
             original_name,
             profile_path,
