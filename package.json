@@ -9,7 +9,8 @@
     "watch": "nodemon app/index.js",
     "create-json": "node app/db/tools/saveJsonToFile.js",
     "get-genres": "node app/db/tools/getGenres.js",
-    "create-db": "node app/db/tools/createDB.js"
+    "create-db": "node app/db/tools/createDB.js",
+    "test-db": "node app/db/tools/testConnectionToDB.js"
   },
   "author": "",
   "license": "ISC",

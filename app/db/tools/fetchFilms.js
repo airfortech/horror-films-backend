@@ -42,7 +42,6 @@ class FetchFilms {
   }
 
   async countTotals(dataType, barDescription) {
-    /* dataTypes =  "total_results" || "total_pages" */
     const totalCounts = this.years.to + 1 - this.years.from;
     this.progressBar.start(totalCounts, 1, barDescription);
     let totals = 0;
