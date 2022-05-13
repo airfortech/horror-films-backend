@@ -10,7 +10,8 @@
     "create-json": "node app/db/tools/saveJsonToFile.js",
     "get-genres": "node app/db/tools/getGenres.js",
     "create-db": "node app/db/tools/createDB.js",
-    "test-db": "node app/db/tools/testConnectionToDB.js"
+    "test-db": "node app/db/tools/testConnectionToDB.js",
+    "rename-db-collection": "node app/db/tools/renameCollectionDB.js"
   },
   "author": "",
   "license": "ISC",

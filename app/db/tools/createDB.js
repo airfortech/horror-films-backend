@@ -2,12 +2,13 @@ const mongoose = require("mongoose");
 const { FetchFilms } = require("./fetchFilms");
 const { saveEntriesToDB } = require("./saveEntriesToDB");
 const { connectToDB } = require("../mongoose");
+const { languagesToFetch, yearFrom, yearTo, genre } = require("../../config");
 
 const getFilms = new FetchFilms({
-  languages: ["en", "pl"],
-  yearFrom: 1980,
-  // yearTo: 1999,
-  // genre: 80,
+  languages: languagesToFetch || ["en"],
+  yearFrom: yearFrom || 2022,
+  yearTo: yearTo || yearFrom || 2022,
+  genre: genre,
 });
 
 async function createDB() {

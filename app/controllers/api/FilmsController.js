@@ -79,12 +79,7 @@ class FilmsController {
         genres: genres.map(({ name }) => name),
         runtime,
         poster_path: poster_path ? poster_path : poster_path_en,
-        video_url:
-          videos.length > 0
-            ? videos[0].key
-            : videos_en.length > 0
-            ? videos_en[0].key
-            : null,
+        video_url: videos_en.length > 0 ? videos_en[0].key : null,
         backdrops: backdrops
           .slice(0, numberOfBackdrops)
           .map(({ file_path }) => file_path),
