@@ -8,8 +8,8 @@ module.exports = {
   urlFilms: "https://api.themoviedb.org/3/discover/movie",
   resultsPerPage: 12,
   imgBaseUrl: "https://image.tmdb.org/t/p/",
-  languagesToFetch: ["en", "pl", "de", "es", "fr"],
-  yearFrom: 1951,
-  yearTo: 1980,
+  languagesToFetch: ["en", "pl"],
+  yearFrom: 2022,
+  yearTo: 2022,
   genre: 27,
 };

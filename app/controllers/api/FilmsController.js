@@ -167,6 +167,7 @@ class FilmsController {
         .status(200)
         .json({ count: filmsCount, pages, page: Number(currentPage), films });
     } catch (error) {
+      console.log(error.message);
       res
         .status(500)
         .json({ error: "Database is not responding. Try again later." });

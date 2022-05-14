@@ -24,9 +24,10 @@ filmSchema.query.byTitle = function (title, language, sort_by, sort_type) {
     ascending: 1,
     descending: -1,
   };
+  const sortTitle = sort_by === "title" ? titleQuery : sort_by;
   return this.find({
-    [titleQuery]: { $regex: `.*${title}.*`, $options: "i" },
-  }).sort({ [sort_by]: sortBy[sort_type] });
+    [titleQuery]: { $regex: `${title}`, $options: "i" },
+  }).sort({ [sortTitle]: sortBy[sort_type] });
 };
 
 const Film = mongoose.model("Film", filmSchema);
