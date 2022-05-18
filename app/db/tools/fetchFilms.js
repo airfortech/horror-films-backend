@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
-const { apiKey, urlFilms } = require("../../config");
 const { ProgressBar } = require("./progressBar");
+const { apiKey, urlFilms } = require("../../config");
 
 class FetchFilms {
   constructor(options) {

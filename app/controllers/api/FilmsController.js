@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
-const { apiKey, urlFilmDetails, resultsPerPage } = require("../../config");
 const { Film } = require("../../db/models/Film");
+const { apiKey, urlFilmDetails, resultsPerPage } = require("../../config");
 
 class FilmsController {
   async getFilm(req, res) {
@@ -58,7 +58,6 @@ class FilmsController {
         poster_path,
       } = values[0];
       const { overview: overview_en, poster_path: poster_path_en } = values[1];
-      const { results: videos } = values[2];
       const { results: videos_en } = values[3];
       const { backdrops, posters } = values[4];
       const { cast, crew } = values[5];

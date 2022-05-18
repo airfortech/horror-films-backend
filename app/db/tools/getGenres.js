@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
-const { apiKey } = require("../../config");
 const { tableLog } = require("../../helpers/tableLog");
+const { apiKey } = require("../../config");
 
 async function getGenres() {
   try {
