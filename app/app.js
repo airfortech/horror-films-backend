@@ -4,10 +4,9 @@ const cors = require("cors");
 const { frontEndHost } = require("./config");
 
 app.use(
-  // cors({
-  //   origin: frontEndHost,
-  // })
-  cors()
+  cors({
+    origin: frontEndHost,
+  })
 );
 app.use(express.json());
 
