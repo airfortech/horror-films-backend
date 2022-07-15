@@ -10,7 +10,7 @@ module.exports = {
   resultsPerPage: 12,
   imgBaseUrl: "https://image.tmdb.org/t/p/",
   languagesToFetch: ["en", "pl"],
-  yearFrom: 2022,
-  yearTo: 2022,
+  yearFrom: 1980,
+  yearTo: 1981,
   genre: 27,
 };
