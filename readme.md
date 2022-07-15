@@ -105,10 +105,7 @@ After creating database you can start API:
 
 ## API Requests
 
-<br>
-
 ### Search for films:
----
 
 **title**: film title
 
@@ -149,7 +146,6 @@ https://horror-films.airm.ct8.pl/en/films/6114-Bram-Stoker's-Dracula
 <br>
 
 ### Get film details:
----
 
 **id**: film id
 
