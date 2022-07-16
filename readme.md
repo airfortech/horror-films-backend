@@ -65,7 +65,7 @@ https://www.npmjs.com/package/mongoose
 - `frontEndHost: "http://localhost:3000"` - url for cors
 - `resultsPerPage: 12` - results per page provided by API
 - `languagesToFetch: ["en", "pl"]` - you can specify in array films languages you want to store in your database
-- `yearFrom: 2000` - year you start gathering films from
+- `yearFrom: 2000` - year you start gathering films
 - ` yearTo: 2022` - year you end gathering films
 - `genre: 27` - films genre you want to store in database (more in tools section)
 
